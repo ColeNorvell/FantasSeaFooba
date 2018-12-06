@@ -1,0 +1,54 @@
+import time
+import sys
+import random
+#
+#
+#noVariants == "no" or "nah" or "No"
+#
+#
+print("Welcome to Fanta® sea Fooba")
+#print("For yes/no questions, you can only use yes/no, none of this yeah/nah or y/n stuff.")
+time.sleep(1)
+print("What is your name?")
+name = input("> ")
+print("You are " + str(name) + ", an ambitous billionare looking into making a pro football team.")
+time.sleep(1)
+print("What would you like to call your team?")
+teamName = input("> ")
+time.sleep(1)
+print("Ummm... what a... creative... team name.")
+time.sleep(1.5)
+print("Not saying it's bad... but um definitely could be better.")
+time.sleep(1.5)
+print("No, no that isn't right")
+time.sleep(1.5)
+print("How about the Cyclones? That sounds cool, huh?")
+teamChoice = input("> ")
+if teamChoice == "yes":
+	time.sleep(1)
+	print("Cool, from this point on on your team name is the Cyclones")
+elif teamChoice == "no":
+	time.sleep(1)
+	print("Well too bad. Your team name is now the Cyclones")
+else:
+	time.sleep(1)
+	print("I didnt understand that. Try responding with yes or no next time")
+	sys.exit()
+time.sleep(1)
+print("Week 1: Cyclones vs. Arizona Cardinals")
+time.sleep(1)
+coin1 = random.randint(0,1)
+print("Heads or tails?")
+choice1 = input("> ")
+if choice1 == "tails":
+	choice1 = 0
+else:
+	choice1 = 1
+if coin1 == 0:
+	print("It landed on tails")
+else:
+	print("It landed on heads")
+if coin1 == choice1:
+	print("Nice job! You have real potential as a coach")
+else:
+	print("Unfortunate. you might wanna look into another position with this luck.")
